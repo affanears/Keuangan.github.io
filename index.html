@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="app-container">
+  <h1>Aplikasi Keuangan</h1>
+  
+  <div class="input-group">
+    <label for="keterangan">Keterangan</label>
+    <input id="keterangan" placeholder="Masukkan keterangan">
+  </div>
+
+  <div class="input-group">
+    <label for="nominal">Nominal</label>
+    <input id="nominal" placeholder="Rp 0">
+  </div>
+
+  <div class="input-group">
+    <label for="tipe">Tipe</label>
+    <select id="tipe">
+      <option value="Pemasukan">Pemasukan</option>
+      <option value="Pengeluaran">Pengeluaran</option>
+    </select>
+  </div>
+
+  <button class="btn-submit" onclick="kirimData()">Simpan</button>
+  
+  <div class="button-group">
+  <button onclick="bukaSpreadsheet()">Buka Spreadsheet</button>
+  <button onclick="downloadSpreadsheet()">Download Spreadsheet</button>
+</div>
+  
+  <div class="warning">
+  ⚠️ Jangan lupa download laporan bulanan sebelum data direset setiap awal bulan!
+</div>
+
+  <p class="credit">credit -@affanears-</p>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
