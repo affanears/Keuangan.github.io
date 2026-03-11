@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Keuangan 3.0</title>
+    <title>Keuangan 3.4</title>
     <link rel="stylesheet" href="./style.css">
 
   </head>
@@ -32,9 +32,16 @@
 
   <button class="btn-submit" onclick="kirimData()">Simpan</button>
   
-  <div class="button-group">
-  <button onclick="bukaSpreadsheet()">Buka Spreadsheet</button>
-  <button onclick="downloadSpreadsheet()">Download Spreadsheet</button>
+  <div class="sheet-buttons">
+
+  <button class="icon-btn" onclick="bukaSpreadsheet()" title="Buka Spreadsheet">
+    <i class="fa-solid fa-table"></i>
+  </button>
+
+  <button class="icon-btn" onclick="downloadSpreadsheet()" title="Download Spreadsheet">
+    <i class="fa-solid fa-download"></i>
+  </button>
+
 </div>
   
   <div class="warning">
@@ -43,8 +50,30 @@
 
   <p class="credit">credit -@affanears-</p>
   
-  <p class="version">Versi 3.0</p>
+  <p class="version">Versi 3.4</p>
 </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+
+<div class="menu-container">
+
+  <!-- tombol titik tiga -->
+  <button class="menu-btn" onclick="toggleMenu()">
+    <i class="fa-solid fa-ellipsis-vertical"></i>
+  </button>
+
+  <!-- menu settings -->
+  <div class="menu-dropdown" id="menuDropdown">
+    <div class="menu-item">
+      <label class="dark-toggle">
+        Dark Mode
+        <input type="checkbox" id="darkSwitch" onchange="toggleDarkMode()">
+      </label>
+    </div>
+  </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script  src="./script.js"></script>
 
   </body>

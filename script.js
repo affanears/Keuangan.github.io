@@ -52,3 +52,12 @@ if (tanggal >= 28) {
 } else {
   warningEl.style.display = "none";
 }
+
+function toggleMenu(){
+  const menu = document.getElementById("menuDropdown");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark");
+}
